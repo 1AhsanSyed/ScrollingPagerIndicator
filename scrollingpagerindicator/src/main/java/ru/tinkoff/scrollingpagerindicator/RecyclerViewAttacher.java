@@ -122,7 +122,7 @@ public class RecyclerViewAttacher implements ScrollingPagerIndicator.PagerAttach
                     if (newPosition != RecyclerView.NO_POSITION) {
                         indicator.setDotCount(attachedAdapter.getItemCount());
                         if (newPosition < attachedAdapter.getItemCount()) {
-                            indicator.setCurrentPosition(newPosition);
+                            //indicator.setCurrentPosition(newPosition);
                         }
                     }
                 }
