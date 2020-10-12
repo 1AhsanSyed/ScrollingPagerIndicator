@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdk
+
+    defaultConfig {
+        applicationId "ru.tinkoff.scrollingpagerindicator.demo"
+        minSdkVersion rootProject.minSdk
+        targetSdkVersion rootProject.targetSdk
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "androidx.viewpager:viewpager:$rootProject.viewPagerVersion"
+    implementation "androidx.viewpager2:viewpager2:$rootProject.viewPager2Version"
+    implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerViewVersion"
+    implementation project(':scrollingpagerindicator')
+}
