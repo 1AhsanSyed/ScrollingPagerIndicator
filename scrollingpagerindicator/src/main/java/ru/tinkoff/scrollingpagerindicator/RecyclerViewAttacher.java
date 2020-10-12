@@ -169,7 +169,7 @@ public class RecyclerViewAttacher implements ScrollingPagerIndicator.PagerAttach
         }
 
         if (offset >= 0 && offset <= 1 && position < itemCount) {
-            indicator.onPageScrolled(position, offset);
+            //indicator.onPageScrolled(position, offset);
         }
     }
 
